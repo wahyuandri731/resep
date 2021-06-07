@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="13dp"
+                android:layout_marginHorizontal="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resep\nMasakan Lebaran"
+                style="@style/Theme.Design.Light"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="28sp" />
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="13dp"
+                android:elevation="5dp"
+                android:background="@drawable/rounded_hover"
+                android:queryHint="Pencarian"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="13dp"/>
+            <TextView
+                android:id="@+id/txt_popular_recipe"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resep Populer"
+                style="@style/Theme.Design.Light"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="16sp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_popular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="9dp"
+                android:scrollbars="none"
+                />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/BANNERADS" />
+
+</FrameLayout>

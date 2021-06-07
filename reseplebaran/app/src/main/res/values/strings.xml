@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Resep Lebaran</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="act_before">act_before</string>
+    <string name="act_before_main">act_before_main</string>
+    <string name="act_before_sel">act_before_sel</string>
+
+
+
+<!--    ca-app-pub-3940256099942544/6300978111    ca-app-pub-7456816030415176/6548882623    -->
+    <string name="BANNERADS">ca-app-pub-7456816030415176/6548882623</string>
+
+    <!--    <string name="view_sel">view_sel</string>-->
+    <!--    <string name="view_sel_categories">view_sel_category</string>-->
+    <!--    <string name="view_sel_recipes">view_sel_recipe</string>-->
+    <!--    <string name="view_sel_recipe_obj">view_sel_recipe_obj</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

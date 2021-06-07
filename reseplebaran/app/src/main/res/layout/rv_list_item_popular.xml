@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:id="@+id/lay_popular_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            tools:ignore="MissingConstraints">
+
+            <helper.SquareImageView
+                android:id="@+id/img_popular"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+            <TextView
+                android:id="@+id/txt_category_name"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Masakan Dayak"
+                style="@style/Theme.Design.Light"
+                android:textAlignment="textStart"
+                android:textSize="12sp"
+                android:textColor="@color/orange"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:id="@+id/txt_recipe_name"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="Sayur Asem buatan mamih unyunyu"
+                style="@style/Theme.Design.Light"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/lato_regular"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
